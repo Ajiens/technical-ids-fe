@@ -64,14 +64,13 @@ export function DataTable<TData, TValue>({
               .getAllColumns()
               .filter((column) => column.getCanHide())
               .map((column) => (
-                <div></div>
-                // <DropdownMenuCheckboxItem
-                //   key={column.id}
-                //   checked={column.getIsVisible()}
-                //   onCheckedChange={(value) => column.toggleVisibility(!!value)}
-                // >
-                //   {column.id}
-                // </DropdownMenuCheckboxItem>
+                <DropdownMenuCheckboxItem
+                  key={column.id}
+                  checked={column.getIsVisible()}
+                  onCheckedChange={(value) => column.toggleVisibility(!!value)}
+                >
+                  {column.id}
+                </DropdownMenuCheckboxItem>
               ))}
           </DropdownMenuContent>
         </DropdownMenu>

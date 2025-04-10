@@ -51,7 +51,7 @@ export function AppSidebar() {
             <SidebarMenu>
               <SidebarMenuItem>
                 <SidebarMenuButton asChild>
-                  <a href="#">
+                  <a href="/">
                     <Box />
                     <span>View</span>
                   </a>
@@ -60,7 +60,7 @@ export function AppSidebar() {
               
               <SidebarMenuItem>
                 <SidebarMenuButton asChild>
-                  <a href="#">
+                  <a href="/product-add">
                     <PackagePlus />
                     <span>Add New Product</span>
                   </a>

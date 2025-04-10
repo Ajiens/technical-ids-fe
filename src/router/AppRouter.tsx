@@ -1,5 +1,6 @@
 import Layout from '@/Layout';
 import HomePage from '@/views/HomePage';
+import ProductForm from '@/views/ProductForm';
 import { Routes, Route, Navigate } from 'react-router-dom';
 
 interface AppRouterProps {
@@ -18,10 +19,10 @@ const AppRouter: React.FC<AppRouterProps> = ({ page }) => {
         }
       />
       <Route
-        path="/about"
+        path="/product-add"
         element={
           <Layout>
-            <div>Ini About</div>
+            <ProductForm/>
           </Layout>
         }
       />
